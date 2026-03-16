@@ -38,7 +38,6 @@ Results:
 - `average` and `max_pool` performed best (Recall@5 > 0.63, EOSk ≈ 1, robustness ≈ 1).
 - `elementwise_product` and `diff` were poor (Recall@5 < 0.21) and should be avoided.
 
-See [experiment_1_report](link-to-pdf) for details.
 
 ---
 

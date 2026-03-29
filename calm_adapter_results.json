@@ -1,0 +1,8 @@
+{
+  "score_adapter": 76.57251604299961,
+  "score_cmean": 89.70137179313154,
+  "best_existing": 98.50402641329204,
+  "n_params": 3251712,
+  "epochs_trained": 80,
+  "best_val_loss": 0.033056492917239666
+}

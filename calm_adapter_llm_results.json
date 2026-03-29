@@ -1,0 +1,34 @@
+{
+  "score_llm_adapter": 66.83925046714245,
+  "score_cmean": 89.70137179313154,
+  "score_orig_adapter": 76.57251604299961,
+  "best_existing": 98.50402641329204,
+  "detail_llm": {
+    "vec_brier": 4.426459182221765,
+    "brier_1": 97.4258533855624,
+    "brier_2": 67.03848527396477,
+    "brier_4": 45.71895569408265,
+    "brierlm": 66.83925046714245
+  },
+  "detail_cmean": {
+    "vec_brier": 43.389443713992385,
+    "brier_1": 97.31393396754336,
+    "brier_2": 89.92342645842376,
+    "brier_4": 82.48013776393654,
+    "brierlm": 89.70137179313154
+  },
+  "n_params": 3251712,
+  "epochs_trained": 60,
+  "best_val_loss": 0.04154563508927822,
+  "llm_call_count": 2400,
+  "avg_llm_score": 0.3560208333333333,
+  "config": {
+    "lam1": 0.05,
+    "lam2": 0.3,
+    "align_interval": 5,
+    "llm_batch": 8,
+    "token_method": "T_mean",
+    "batch_size": 64,
+    "lr": 0.0003
+  }
+}

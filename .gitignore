@@ -1,0 +1,65 @@
+# 大型数据/缓存文件
+results_data.pkl
+token_embeddings_cache.npy
+
+# 模型权重
+*.pt
+*.pth
+
+# 中间向量（可重生成）
+calm_adapter_vecs.npy
+calm_adapter_llm_vecs.npy
+reconstruction_v2_results.npy
+reconstruction_v2_combined.npy
+reconstruction_results.npy
+reconstruction_combined.npy
+reconstruction_scores.npy
+reconstruction_scores_simple.npy
+reconstruction_bleu.npy
+
+# 大型报告数据
+reconstruction_full_report.html
+reconstruction_v2_report_data.json
+reconstruction_detail.pkl
+reconstruction_v2_detail.pkl
+reconstruction_report_data.json
+
+# 日志/测试输出
+*_log.txt
+*_err.txt
+check_data.txt
+debug_kp_output.txt
+key_test.txt
+validate_output.txt
+validation_test.txt
+test_api_kp_out.txt
+test_api_result.json
+test_kp_fixed_out.txt
+test_kp_fixed_result.json
+test_brier_out.txt
+test_zsinvert_output.txt
+zsinvert_test.txt
+run_full_err.txt
+recon_v2_err.txt
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 解包临时目录
+weekly_report_v2_unpacked/
+weekly_report_unpacked/
+
+# OneDrive临时文件
+*.tmp
+~$*
+
+# workbuddy内部
+.workbuddy/
+
+# 嵌套仓库（单独管理）
+adversarial_decoding/
+
+# 模型文件（MiniLM，不上传）
+model/

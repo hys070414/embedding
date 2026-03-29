@@ -1,0 +1,63 @@
+{
+  "T_mean×C_dynamic_weighted": {
+    "eosk": 0.9935081481933594,
+    "recall_10": 0.34756575265808437,
+    "separation": 0.08465541863493231,
+    "silhouette": 0.012658215127885342,
+    "brierlm": 91.09760669528973
+  },
+  "T_max×C_dynamic_weighted": {
+    "eosk": 0.6855314254760743,
+    "recall_10": 0.31359820928931126,
+    "separation": 0.010406398231368907,
+    "silhouette": 0.0026410140562802553,
+    "brierlm": 34.41484571269674
+  },
+  "T_min×C_dynamic_weighted": {
+    "eosk": 0.7354938983917236,
+    "recall_10": 0.3061555679910462,
+    "separation": 0.010352958489088016,
+    "silhouette": 0.0023591057397425175,
+    "brierlm": 34.76073438728768
+  },
+  "T_concat×C_dynamic_weighted": {
+    "eosk": 0.9935081481933594,
+    "recall_10": 0.34756575265808437,
+    "separation": 0.08465541863493231,
+    "silhouette": 0.012658215127885342,
+    "brierlm": 91.09760669528973
+  },
+  "T_weighted×C_dynamic_weighted": {
+    "eosk": 0.9935075759887695,
+    "recall_10": 0.34756575265808437,
+    "separation": 0.08465542228012801,
+    "silhouette": 0.012658215127885342,
+    "brierlm": 91.09760614467233
+  },
+  "T_product×C_dynamic_weighted": {
+    "eosk": 0.017343337833881377,
+    "recall_10": 0.1309457190822577,
+    "separation": 0.00597442036565749,
+    "silhouette": -0.10785079747438431,
+    "brierlm": 97.75696435060844
+  },
+  "T_first×C_dynamic_weighted": {
+    "eosk": 0.2796874284744263,
+    "recall_10": 0.27554560716284376,
+    "separation": 0.04664445389018185,
+    "silhouette": -0.05163942277431488,
+    "brierlm": 93.07194604873347
+  },
+  "T_last×C_dynamic_weighted": {
+    "eosk": 0.5421328544616699,
+    "recall_10": 0.28880805819809746,
+    "separation": 0.06094233854450215,
+    "silhouette": 0.0035526123829185963,
+    "brierlm": 94.4932689268483
+  },
+  "AVG_C_dynamic_weighted_eosk": 0.655089102126658,
+  "AVG_C_dynamic_weighted_recall_10": 0.29471880246222615,
+  "AVG_C_dynamic_weighted_separation": 0.04853585363384888,
+  "AVG_C_dynamic_weighted_silhouette": -0.014120355335762724,
+  "AVG_C_dynamic_weighted_brierlm": 78.4738223701783
+}

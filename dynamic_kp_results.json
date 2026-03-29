@@ -1,0 +1,62 @@
+{
+  "T_mean×C_dynamic_weighted": {
+    "brierlm": 88.47229802438468,
+    "vec_brier": 42.5854038499288,
+    "brier_1": 96.39999999999999,
+    "brier_2": 88.71059619684162,
+    "brier_4": 80.9784373886022
+  },
+  "T_max×C_dynamic_weighted": {
+    "brierlm": 65.70134463053455,
+    "vec_brier": 0.3632994058937781,
+    "brier_1": 98.4,
+    "brier_2": 66.83534233762967,
+    "brier_4": 43.12424435082776
+  },
+  "T_min×C_dynamic_weighted": {
+    "brierlm": 66.81366173016842,
+    "vec_brier": 0.366525773370569,
+    "brier_1": 99.6,
+    "brier_2": 68.11175185634679,
+    "brier_4": 43.96574461169523
+  },
+  "T_concat×C_dynamic_weighted": {
+    "brierlm": 89.82702135929748,
+    "vec_brier": 43.05702154619773,
+    "brier_1": 97.2,
+    "brier_2": 90.42022194529036,
+    "brier_4": 82.46870270536343
+  },
+  "T_weighted×C_dynamic_weighted": {
+    "brierlm": 89.60353704187207,
+    "vec_brier": 45.133154439008536,
+    "brier_1": 96.39999999999999,
+    "brier_2": 89.9862104427614,
+    "brier_4": 82.93206199534599
+  },
+  "T_product×C_dynamic_weighted": {
+    "brierlm": 97.20451445640853,
+    "vec_brier": 95.04649202533218,
+    "brier_1": 97.6,
+    "brier_2": 97.21030396139011,
+    "brier_4": 96.80486576026473
+  },
+  "T_first×C_dynamic_weighted": {
+    "brierlm": 92.63120612389548,
+    "vec_brier": 63.531201206813115,
+    "brier_1": 98.8,
+    "brier_2": 92.11386318913172,
+    "brier_4": 87.33534002920209
+  },
+  "T_last×C_dynamic_weighted": {
+    "brierlm": 92.97063249173675,
+    "vec_brier": 54.253935723764144,
+    "brier_1": 97.6,
+    "brier_2": 93.22661254793714,
+    "brier_4": 88.31767647595218
+  },
+  "AVG_C_dynamic_weighted": {
+    "brierlm": 85.40302698228724,
+    "note": "8种Token方法平均 (N=8)"
+  }
+}

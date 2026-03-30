@@ -59,11 +59,7 @@ embedding/
 │   ├── test_brier.py              - BrierLM 测试
 │   ├── test_kp_fixed.py           - 知识点修复测试
 │   ├── test_zsinvert.py           - ZSInvert 测试
-│   ├── debug_kp.py                - 知识点提取调试
-│   ├── generate_brier_pdf.py      - BrierLM 报告生成
-│   ├── export_figs_for_docx.py    - 图表导出
-│   ├── generate_weekly_docx.js    - 周报 Word 生成
-│   └── weekly_report_pdf.py       - 周报 PDF 生成
+│   └── debug_kp.py                - 知识点提取调试
 │
 ├── dataset_without_preference.jsonl  # 数据集（1787道化学题）
 └── README.md

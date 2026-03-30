@@ -1,3 +1,9 @@
+# 文档/报告（本地保留，不上传 GitHub）
+*.docx
+*.pdf
+*.png
+*.html
+
 # 大型数据/缓存文件
 results_data.pkl
 token_embeddings_cache.npy

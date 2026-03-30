@@ -7,38 +7,63 @@
 ```
 embedding/
 ├── experiments/
-│   ├── core/              # 核心实验框架
-│   │   ├── experiment.py      - 主实验入口（64种组合）
-│   │   ├── evaluation.py      - 6项评估指标
-│   │   ├── token_methods.py   - 8种Token聚合方法
-│   │   ├── chunk_methods.py   - 8种Chunk聚合方法
-│   │   ├── data_loader.py     - 数据集加载
-│   │   └── config.py          - 全局配置
+│   ├── core/                  # 核心实验框架
+│   │   ├── experiment.py          - 主实验入口（64种组合）
+│   │   ├── evaluation.py          - 6项评估指标
+│   │   ├── token_methods.py       - 8种Token聚合方法
+│   │   ├── chunk_methods.py       - 8种Chunk聚合方法
+│   │   ├── data_loader.py         - 数据集加载
+│   │   ├── config.py              - 全局配置
+│   │   ├── run.py                 - 快速运行入口
+│   │   ├── run_full.py            - 全量运行入口
+│   │   ├── generate_report.py     - 报告生成
+│   │   ├── visualization.py       - 结果可视化
+│   │   ├── validate_pipeline.py   - 管道验证
+│   │   └── show_weighted_results.py - 加权结果展示
 │   │
-│   ├── brier/             # VecBrierLM 评估
-│   │   ├── brier_eval.py      - BrierLM 评估模块
-│   │   └── run_brier_eval.py  - 全量评估入口
+│   ├── brier/                 # VecBrierLM 评估
+│   │   ├── brier_eval.py          - BrierLM 评估模块
+│   │   └── run_brier_eval.py      - 全量评估入口
 │   │
-│   ├── weighted_chunk/    # 知识点加权聚合实验
+│   ├── weighted_chunk/        # 知识点加权聚合实验
 │   │   ├── weighted_chunk_exp.py        - C_sim_weighted / C_idf_weighted
 │   │   ├── eval_weighted_all_metrics.py - 加权方法全量5指标评估
 │   │   ├── dynamic_kp_weight.py         - C_dynamic_weighted（LLM动态权重）
 │   │   └── eval_dynamic_all_metrics.py  - 动态权重全量5指标评估
 │   │
-│   ├── calm_adapter/      # CALM Adapter 压缩实验
-│   │   ├── calm_adapter.py     - 标准注意力自编码器
-│   │   └── calm_adapter_llm.py - LLM-in-the-Loop 版本
+│   ├── calm_adapter/          # CALM Adapter 压缩实验
+│   │   ├── calm_adapter.py        - 标准注意力自编码器
+│   │   ├── calm_adapter_llm.py    - LLM-in-the-Loop 版本
+│   │   ├── train_attention.py     - 注意力模块训练
+│   │   └── train_inverter.py      - Inverter 训练
 │   │
-│   └── reconstruction/    # 向量重建质量评估
-│       ├── reconstruction_v2.py   - KNN + Qwen 重建评估
-│       └── reconstruction_eval.py - 重建评估工具函数
+│   └── reconstruction/        # 向量重建质量评估
+│       ├── reconstruction_v2.py       - KNN + Qwen 重建评估
+│       ├── reconstruction_eval.py     - 重建评估工具函数
+│       └── reconstruction_beam.py.py  - Beam Search 重建
 │
-├── utils/                 # 工具脚本
-│   ├── debug_kp.py            - 知识点提取调试
-│   ├── generate_brier_pdf.py  - BrierLM 报告生成
-│   ├── export_figs_for_docx.py - 图表导出
-│   ├── generate_weekly_docx.js - 周报 Word 生成
-│   └── weekly_report_pdf.py   - 周报 PDF 生成
+├── results/                   # 实验结果数据
+│   ├── results_matrix.npy         - (8,8,5) 5指标矩阵
+│   ├── brier_results.npy          - (8,8) VecBrierLM 分数矩阵
+│   ├── brier_detail.json          - BrierLM 各k值细节
+│   ├── calm_adapter_results.json  - Adapter 实验结果
+│   ├── calm_adapter_llm_results.json - LLM Adapter 结果
+│   ├── weighted_full_metrics.json - 加权方法5指标结果
+│   ├── weighted_results.json      - 加权方法对比数据
+│   ├── dynamic_full_metrics.json  - 动态权重5指标结果
+│   ├── dynamic_kp_results.json    - 动态权重实验结果
+│   └── dynamic_kp_weights_cache.json - 权重缓存
+│
+├── utils/                     # 工具与调试脚本
+│   ├── test_api_kp.py             - API 知识点提取测试
+│   ├── test_brier.py              - BrierLM 测试
+│   ├── test_kp_fixed.py           - 知识点修复测试
+│   ├── test_zsinvert.py           - ZSInvert 测试
+│   ├── debug_kp.py                - 知识点提取调试
+│   ├── generate_brier_pdf.py      - BrierLM 报告生成
+│   ├── export_figs_for_docx.py    - 图表导出
+│   ├── generate_weekly_docx.js    - 周报 Word 生成
+│   └── weekly_report_pdf.py       - 周报 PDF 生成
 │
 ├── dataset_without_preference.jsonl  # 数据集（1787道化学题）
 └── README.md
